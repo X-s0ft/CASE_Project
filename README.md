@@ -1,2 +1,2 @@
 # CASE_Project
-Пашёл нахуй
+Soom

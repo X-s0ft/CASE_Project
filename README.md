@@ -12,10 +12,10 @@ easy, med, hard test (при нажатии открывается новая с
 >> 1) Найти онлай БД подобную FireBase или использовать её же.
 >> 2) Изучить данную БД.
 >> 3) Создать таблицу с 5 записями:
-* | UserID        | Login(or E-mail | Password |
-  | :-----------: |:-------------:  | :-----:  |
-  | TypeData      | TypeData        | TypeData |
-  | int (Key)     | nvarchar(MAX)   | password |
+* | UserID        | Login(or E-mail) | Password |
+  | :-----------: |:-------------:   | :-----:  |
+  | TypeData      | TypeData         | TypeData |
+  | int (Key)     | nvarchar(MAX)    | password |
 > План для Владислава до 09.12.2022:
 >> 1) Общие исправления:
 >>> * Придерживайся одного стиля, не делая резких изменений в Background. И меняй везде background.

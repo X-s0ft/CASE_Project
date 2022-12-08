@@ -15,7 +15,7 @@ easy, med, hard test (при нажатии открывается новая с
 * | UserID        | Login(or E-mail) | Password |
   | :-----------: |:-------------:   | :-----:  |
   | TypeData      | TypeData         | TypeData |
-  | int (Key)     | nvarchar(MAX)    | password |
+  | int (Key)     | nvarchar(MAX)    | password (nvarchar(MAX)) |
 > План для Владислава до 09.12.2022:
 >> 1) Общие исправления:
 >>> * Придерживайся одного стиля, не делая резких изменений в Background. И меняй везде background.

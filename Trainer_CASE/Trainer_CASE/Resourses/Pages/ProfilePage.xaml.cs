@@ -12,30 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.IO;
 
-namespace Trainer_CASE
+namespace Trainer_CASE.Resourses.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ProfilePage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ProfilePage : Page
     {
-        public MainWindow()
+        public ProfilePage()
         {
             InitializeComponent();
-        }
-
-
-        /// <summary>
-        /// Method moving window
-        /// </summary>
-        private void Windo_moving(object sender, MouseButtonEventArgs e)
-        {
-            if(e.LeftButton == MouseButtonState.Pressed)
-            {
-                DragMove();
-            }
         }
     }
 }

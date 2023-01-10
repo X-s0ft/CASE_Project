@@ -37,5 +37,22 @@ namespace Trainer_CASE
                 DragMove();
             }
         }
+
+        /// <summary>
+        /// Method rollup window
+        /// </summary>
+        private void btnRollup_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+
+        /// <summary>
+        /// Method close window
+        /// </summary>
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

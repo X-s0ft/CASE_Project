@@ -4,6 +4,20 @@
              xmlns:local="clr-namespace:Trainer_CASE"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="TextBox">
+            <Setter Property="FontFamily" Value=".Resourses/Fonts/Ubuntu-Medium"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontFamily" Value=".Resourses/Fonts/Ubuntu-Medium"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="0,25,0,0"/>
+            <Setter Property="FontFamily" Value=".Resourses/Fonts/Ubuntu-Medium"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value=".Resourses/Fonts/Ubuntu-Medium"/>
+        </Style>
     </Application.Resources>
 </Application>

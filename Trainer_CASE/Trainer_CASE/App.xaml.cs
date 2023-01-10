@@ -13,5 +13,9 @@ namespace Trainer_CASE
     /// </summary>
     public partial class App : Application
     {
+        private void Setter_Gesture(object sender, System.Windows.Controls.InkCanvasGestureEventArgs e)
+        {
+
+        }
     }
 }

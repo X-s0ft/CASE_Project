@@ -13,6 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using Trainer_CASE.Classes;
+using FireSharp.Interfaces;
+using FireSharp;
+
 
 namespace Trainer_CASE
 {
@@ -45,6 +49,8 @@ namespace Trainer_CASE
         {
             WindowState = WindowState.Minimized;
         }
+
+
 
 
         /// <summary>

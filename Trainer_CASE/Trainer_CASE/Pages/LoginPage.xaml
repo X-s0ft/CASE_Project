@@ -11,9 +11,9 @@
     <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
         
         <TextBlock Text="Login" FontSize="25" TextAlignment="Center" Foreground="White"/>
-        <Label Content="E-mail" FontSize="12" FontWeight="Medium"/>
+        <Label Content="Login" FontSize="12" FontWeight="Medium"/>
         
-        <TextBox x:Name="EmailTxb" Width="300" 
+        <TextBox x:Name="LoginTxb" Width="300" 
                  Height="30" FontSize="25" Background="Transparent" 
                  Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray" 
                  BorderThickness="0,0,0,4"/>

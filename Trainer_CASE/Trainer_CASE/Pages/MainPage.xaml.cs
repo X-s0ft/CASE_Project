@@ -24,5 +24,20 @@ namespace Trainer_CASE.Resourses.Pages
         {
             InitializeComponent();
         }
+
+        private void btnEASY_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnHARD_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnMEDIUM_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

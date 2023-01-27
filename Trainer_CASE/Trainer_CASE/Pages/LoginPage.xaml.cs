@@ -57,6 +57,10 @@ namespace Trainer_CASE.Resourses.Pages
                     {
                         FrameApp.frame.Navigate(new MainPage());
                     }
+                    else
+                    {
+                        MessageBox.Show("Error");
+                    }
                 }
                 catch(Exception ex)
                 {

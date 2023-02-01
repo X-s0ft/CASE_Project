@@ -11,20 +11,16 @@ namespace Trainer_CASE.Classes
     {
         public string login { get; set; }
         public string password { get; set; }
-
-        private static string error;
-
+        
         public static bool IsEqual(GetDATA user1, GetDATA user2)
         {
             if(user1 == null || user2 == null) { return false; }
             if(user1.login != user2.login)
             {
-                error = "Пользователя не существует";
                 return false;
             }
             if(user1.password != user2.password)
             {
-                error = "Имя пользователя и пароль не совпадают";
                 return false;
             } 
 

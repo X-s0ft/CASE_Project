@@ -17,6 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Trainer_CASE.Classes;
+using Trainer_CASE.Resourses.Pages;
 
 namespace Trainer_CASE.Resourses.Pages
 {
@@ -25,20 +26,23 @@ namespace Trainer_CASE.Resourses.Pages
     /// </summary>
     public partial class LoginPage : Page
     {
+        
+        public LoginPage()
+        {
+            InitializeComponent();
+        }
+
         IFirebaseConfig fbc = new FirebaseConfig()
         {
             AuthSecret = "EM0CVtJwRDTSeBOANYOrBCtxJHZHj6pbEPIUez7m",
             BasePath = "https://base-7f796-default-rtdb.firebaseio.com/"
         };
-        public LoginPage()
-        {
-            InitializeComponent();
-        }
-        private async void btnLogin_Click(object sender, RoutedEventArgs e)
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             FirebaseClient client;
             client = new FirebaseClient(fbc);
-            if (string.IsNullOrWhiteSpace(LoginTxb.Text) && string.IsNullOrWhiteSpace(Pswb.Password))
+            if (string.IsNullOrEmpty(LoginTxb.Text) && string.IsNullOrEmpty(Pswb.Text))
             {
                 MessageBox.Show("Данные не заполнены");
             }
@@ -46,12 +50,12 @@ namespace Trainer_CASE.Resourses.Pages
             {
                 try
                 {
-                    FirebaseResponse response = await client.GetAsync(@"0/Users/" + LoginTxb.Text);
+                    FirebaseResponse response = client.Get(@"Users/" + LoginTxb.Text);
                     GetDATA dATA = response.ResultAs<GetDATA>();
                     GetDATA getDATA = new GetDATA()
                     {
                         login = LoginTxb.Text,
-                        password = Pswb.Password
+                        password = Pswb.Text
                     };
                     if(GetDATA.IsEqual(dATA, getDATA))
                     {
@@ -59,7 +63,7 @@ namespace Trainer_CASE.Resourses.Pages
                     }
                     else
                     {
-                        MessageBox.Show("Error");
+                        MessageBox.Show("Проверьте введённые данные");
                     }
                 }
                 catch(Exception ex)

@@ -28,6 +28,7 @@ namespace Trainer_CASE
         public MainWindow()
         {
             InitializeComponent();
+            FrameApp.frame = MainFrame;
         }
 
 

@@ -19,7 +19,7 @@
             </Border.Background>
         
             <Border Background="#1c1D34" CornerRadius="15" Opacity="0.8">
-                <Frame x:Name="MainFrame" Source=".\pages\loginpage.xaml" NavigationUIVisibility="Hidden" 
+                <Frame x:Name="MainFrame" Source=".\resourses\pages\loginpage.xaml" NavigationUIVisibility="Hidden" 
                    VerticalAlignment="Center"/>
             </Border>
         </Border>

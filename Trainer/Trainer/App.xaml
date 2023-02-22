@@ -1,0 +1,29 @@
+﻿<Application x:Class="Trainer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Trainer"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="TextElement.FontFamily" Value="/Resurses/Fonts/#Ubuntu"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="TextElement.FontFamily" Value="/Resurses/Fonts/#Ubuntu"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="TextElement.FontFamily" Value="/Resurses/Fonts/#Ubuntu"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="TextElement.FontFamily" Value="/Resurses/Fonts/#Ubuntu"/>
+        </Style>
+        <Style TargetType="Hyperlink">
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="TextElement.FontFamily" Value="/Resurses/Fonts/#Ubuntu"/>
+        </Style>
+    </Application.Resources>
+</Application>

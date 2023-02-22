@@ -1,0 +1,70 @@
+﻿<Page x:Class="Trainer.Pages.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Trainer.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="1170"
+      Title="LoginPage">
+    <StackPanel Orientation="Horizontal">
+        
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,0,0,0">
+            
+            <TextBlock Text="Авторизация" FontSize="40" TextAlignment="Center" Foreground="White"/>
+            
+            <StackPanel Orientation="Vertical" Margin="0,50,0,0" HorizontalAlignment="Left">
+                
+                <Label Content="Логин" FontSize="30" FontWeight="Medium"/>
+
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                     <Image Source="/Resourses/Images/LoginIco.png" />
+
+                    <TextBox x:Name="LoginTxb" Width="300" MaxLength="20" Margin="30,0,0,0"
+                         Height="30" FontSize="20" Background="Transparent" 
+                         Foreground="White" CaretBrush="White" BorderBrush="White" 
+                         BorderThickness="0,0,0,2"/>
+                </StackPanel>
+
+                <Label Content="Пароль" FontSize="30" FontWeight="Medium" Margin="0,40,0,0"/>
+
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Image Source="/Resourses/Images/PasswordIco.png" />
+
+                    <PasswordBox x:Name="PasswordB" Width="300" MaxLength="20" Margin="30,0,0,0"
+                                 Height="30" FontSize="20"  Background="Transparent"
+                         Foreground="White" CaretBrush="White" BorderBrush="White" 
+                         BorderThickness="0,0,0,2">
+                    </PasswordBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Right">
+                    <TextBlock Margin="0,0,20,0" VerticalAlignment="Center" Text="Запомни меня" Foreground="White" FontSize="20"/>
+                    <CheckBox Checked="rememberTrue" x:Name="remT">
+                        <CheckBox.LayoutTransform>
+                            <ScaleTransform ScaleX="2" ScaleY="2" />
+                        </CheckBox.LayoutTransform>
+                    </CheckBox>
+                </StackPanel>
+                <TextBlock Margin="0,10,0,0" TextAlignment="Right">
+                    <Hyperlink NavigateUri="registrationpage.xaml" FontSize="20">
+                        Регистрация 
+                    </Hyperlink>
+                </TextBlock>
+
+                <Button Content="Войти" x:Name="btnLogin" Click="btnLogin_Click" Cursor="Hand" 
+                        Background="Transparent" Foreground="White" BorderBrush="White"
+                        Width="200" Height="40" FontSize="25" Margin="0,20,0,0" >
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="15"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            
+        </StackPanel>
+    </StackPanel>
+</Page>

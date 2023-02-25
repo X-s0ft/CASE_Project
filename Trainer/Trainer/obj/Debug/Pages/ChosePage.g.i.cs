@@ -41,6 +41,14 @@ namespace Trainer.Pages {
     public partial class ChosePage : System.Windows.Controls.Page, System.Windows.Markup.IComponentConnector {
         
         
+        #line 15 "..\..\..\Pages\ChosePage.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label UserName;
+        
+        #line default
+        #line hidden
+        
+        
         #line 161 "..\..\..\Pages\ChosePage.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnEASY;
@@ -95,6 +103,9 @@ namespace Trainer.Pages {
             switch (connectionId)
             {
             case 1:
+            this.UserName = ((System.Windows.Controls.Label)(target));
+            return;
+            case 2:
             
             #line 21 "..\..\..\Pages\ChosePage.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.btnGetProfile);
@@ -102,7 +113,7 @@ namespace Trainer.Pages {
             #line default
             #line hidden
             return;
-            case 2:
+            case 3:
             
             #line 30 "..\..\..\Pages\ChosePage.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.btnExit);
@@ -110,7 +121,7 @@ namespace Trainer.Pages {
             #line default
             #line hidden
             return;
-            case 3:
+            case 4:
             this.btnEASY = ((System.Windows.Controls.Button)(target));
             
             #line 161 "..\..\..\Pages\ChosePage.xaml"
@@ -119,7 +130,7 @@ namespace Trainer.Pages {
             #line default
             #line hidden
             return;
-            case 4:
+            case 5:
             this.btnMEDIUM = ((System.Windows.Controls.Button)(target));
             
             #line 184 "..\..\..\Pages\ChosePage.xaml"
@@ -128,7 +139,7 @@ namespace Trainer.Pages {
             #line default
             #line hidden
             return;
-            case 5:
+            case 6:
             this.btnHARD = ((System.Windows.Controls.Button)(target));
             
             #line 206 "..\..\..\Pages\ChosePage.xaml"

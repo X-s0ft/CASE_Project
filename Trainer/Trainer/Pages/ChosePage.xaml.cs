@@ -24,26 +24,28 @@ namespace Trainer.Pages
         public ChosePage()
         {
             InitializeComponent();
+
+            UserName.Content = LoginPage.login.ToString();
         }
 
         private void btnGetProfile(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new ProfilePage());
         }
 
         private void btnEASY_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new EasyPage());
         }
 
         private void btnHARD_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new HardPage());
         }
 
         private void btnMEDIUM_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new MediumPage());
         }
 
         private void btnExit(object sender, RoutedEventArgs e)

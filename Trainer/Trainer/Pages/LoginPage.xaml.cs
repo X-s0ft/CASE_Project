@@ -35,7 +35,7 @@ namespace Trainer.Pages
             InitializeComponent();
         }
 
-        
+        public static string login { get; set; }
 
         IFirebaseConfig fbc = new FirebaseConfig()
         {
@@ -64,6 +64,7 @@ namespace Trainer.Pages
                     };
                     if (GetDATA.IsEqual(dATA, getDATA))
                     {
+                        login = LoginTxb.Text;
                         this.NavigationService.Navigate(new ChosePage());
                     }
                     else

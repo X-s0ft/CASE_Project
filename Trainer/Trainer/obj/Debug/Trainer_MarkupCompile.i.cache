@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Мои проекты\Trainer\Trainer\obj\Debug\
+D:\GitHub\CASE_Project\Trainer\Trainer\obj\Debug\
 Trainer
 none
 false
 DEBUG;TRACE
-D:\Мои проекты\Trainer\Trainer\App.xaml
-5-753302580
+D:\GitHub\CASE_Project\Trainer\Trainer\App.xaml
+8-813073831
 
-121344632639
-137-938997181
-MainWindow.xaml;Pages\ChosePage.xaml;Pages\LoginPage.xaml;Pages\ProfilePage.xaml;Pages\RegistrationPage.xaml;
+15-2146711434
+137-1329014487
+MainWindow.xaml;Pages\ChosePage.xaml;Pages\EasyPage.xaml;Pages\HardPage.xaml;Pages\LoginPage.xaml;Pages\MediumPage.xaml;Pages\ProfilePage.xaml;Pages\RegistrationPage.xaml;
 
 True
 

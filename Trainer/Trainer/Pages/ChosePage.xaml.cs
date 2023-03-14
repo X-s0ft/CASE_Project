@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Trainer.Pages;
+using Trainer.Pages.Easy;
+using Trainer.Pages.Hard;
 
 namespace Trainer.Pages
 {
@@ -30,22 +32,22 @@ namespace Trainer.Pages
 
         private void btnGetProfile(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new ProfilePage());
+            //this.NavigationService.Navigate(new ProfilePage());
         }
 
         private void btnEASY_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new EasyPage());
+            this.NavigationService.Navigate(new Easy.n1());
         }
 
         private void btnHARD_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new HardPage());
+            this.NavigationService.Navigate(new Hard.n1());
         }
 
         private void btnMEDIUM_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new MediumPage());
+            this.NavigationService.Navigate(new Medium.n1());
         }
 
         private void btnExit(object sender, RoutedEventArgs e)

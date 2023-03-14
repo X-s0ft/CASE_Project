@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\GitHub\CASE_Project\Trainer\Trainer\App.xaml
-8-813073831
+16-1686323220
 
-15-2146711434
+221330501166
 137-1329014487
-MainWindow.xaml;Pages\ChosePage.xaml;Pages\EasyPage.xaml;Pages\HardPage.xaml;Pages\LoginPage.xaml;Pages\MediumPage.xaml;Pages\ProfilePage.xaml;Pages\RegistrationPage.xaml;
+MainWindow.xaml;Pages\ChosePage.xaml;Pages\Easy\n1.xaml;Pages\Easy\Final.xaml;Pages\Easy\n2.xaml;Pages\Easy\n3.xaml;Pages\Hard\Final.xaml;Pages\Hard\n1.xaml;Pages\Hard\n2.xaml;Pages\Hard\n3.xaml;Pages\LoginPage.xaml;Pages\Medium\Final.xaml;Pages\Medium\n1.xaml;Pages\Medium\n2.xaml;Pages\Medium\n3.xaml;Pages\RegistrationPage.xaml;
 
-True
+False
 

@@ -1,0 +1,58 @@
+﻿<Page x:Class="Trainer.Pages.Easy.n3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Trainer.Pages.Easy"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="1170"
+      Title="n3">
+
+    <StackPanel Orientation="Vertical">
+        <Label FontSize="45" Content="Задание №5" Foreground="Lime" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+        <Label FontSize="26" Content="Рассмотрите картинку и запомните что на ней находиться" Foreground="Orange" HorizontalAlignment="Center"/>
+
+        <StackPanel x:Name="SeePhoto" Orientation="Vertical" Margin="0,35,0,0">
+            <Image Source="/Resourses/Images/qst5E.png" Width="400"/>
+            <Button Content="Начать"  Cursor="Hand" Background="Transparent" Foreground="White"
+                        BorderBrush="White" 
+                        Width="200" Height="40" FontSize="20" Margin="0,20,0,20" Click="btnStart_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="0,90,0,0" x:Name="Question5" Visibility="Collapsed" HorizontalAlignment="Center">
+            <StackPanel Margin="20">
+                <StackPanel Orientation="Horizontal">
+                    <Label FontSize="20" Content="Какая цифра соответствует снеговику?"></Label>
+                    <TextBox x:Name="Quest5A" Width="300" TextAlignment="Center"  Margin="15,0,0,0"
+                             FontSize="30"  Background="Transparent" MaxLength="30"
+                             Foreground="White" CaretBrush="White" BorderBrush="White" 
+                             BorderThickness="0,0,0,2" ></TextBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="20">
+                <StackPanel Orientation="Horizontal">
+                    <Label VerticalAlignment="Center" FontSize="20" Content="Какое слово было под цифрой 6?"></Label>
+                    <TextBox x:Name="Quest5B" Width="300" TextAlignment="Center" Margin="65,0,0,0"
+                             FontSize="30" Background="Transparent"  MaxLength="30"
+                             Foreground="White" CaretBrush="White" BorderBrush="White" 
+                             BorderThickness="0,0,0,2" ></TextBox>
+                </StackPanel>
+            </StackPanel>
+            <Button Content="Закончить" Cursor="Hand" Background="Transparent" Foreground="Red"
+                        BorderBrush="Red" 
+                        Width="200" Height="40" FontSize="20" Margin="0,50,0,0" Click="btnEnd_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</Page>

@@ -11,7 +11,7 @@
         
         <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,0,0,0">
             
-            <TextBlock Text="Авторизация" FontSize="40" TextAlignment="Center" Foreground="White"/>
+            <Label Content="Авторизация" FontSize="40" HorizontalAlignment="Center" Foreground="White"/>
             
             <StackPanel Orientation="Vertical" Margin="0,50,0,0" HorizontalAlignment="Left">
                 
@@ -37,14 +37,7 @@
                          BorderThickness="0,0,0,2">
                     </PasswordBox>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Right">
-                    <TextBlock Margin="0,0,20,0" VerticalAlignment="Center" Text="Запомни меня" Foreground="White" FontSize="20"/>
-                    <CheckBox Checked="rememberTrue" x:Name="remT">
-                        <CheckBox.LayoutTransform>
-                            <ScaleTransform ScaleX="2" ScaleY="2" />
-                        </CheckBox.LayoutTransform>
-                    </CheckBox>
-                </StackPanel>
+                
                 <TextBlock Margin="0,10,0,0" TextAlignment="Right">
                     <Hyperlink NavigateUri="registrationpage.xaml" FontSize="20">
                         Регистрация 

@@ -25,5 +25,8 @@
             <Setter Property="FontWeight" Value="Medium"/>
             <Setter Property="TextElement.FontFamily" Value="/Resurses/Fonts/#Ubuntu"/>
         </Style>
+        <Style TargetType="RadioButton">
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
     </Application.Resources>
 </Application>

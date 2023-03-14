@@ -14,7 +14,7 @@
             <Image Source="/Resourses/Images/ProfileICO.png"/>
             <Label x:Name="UserName" Content="XXX" HorizontalAlignment="Center"></Label>
         </StackPanel>
-        
+
         <StackPanel VerticalAlignment="Center" Orientation="Vertical" Margin="40,0,0,0">
             <Button Content="Об аккаунте" Cursor="Hand" Background="Transparent" Foreground="White"
                         BorderBrush="White" 
@@ -73,14 +73,14 @@
                     <Grid>
                         <Border Background="#FFFFFF"
                         Height="150"
-                        Width="140"
+                        Width="150"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
                         CornerRadius="20"
                         Opacity="0.3"
                         Margin="10,10,0,0"/>
 
-                        <TextBlock Text="Лёгкий &#x0a;X задач &#x0a;X тестов &#x0a;X головоломок"
+                        <TextBlock Text="Лёгкий уровень &#x0a;Здесь находятся &#x0a;&#x0a;5 заданий"
                            Foreground="#FFFFFF"
                            FontFamily="Ubunta"
                            FontSize="15"
@@ -106,14 +106,14 @@
                     <Grid>
                         <Border Background="#FFFFFF"
                         Height="150"
-                        Width="140"
-                        HorizontalAlignment="Left"
+                        Width="160"
+                        HorizontalAlignment="Center"
                         VerticalAlignment="Top"
                         CornerRadius="20"
                         Opacity="0.3"
-                        Margin="10,10,0,0"/>
+                        Margin="0,10,0,0"/>
 
-                        <TextBlock Text="Средний &#x0a;X задач &#x0a;X тестов &#x0a;X головоломок"
+                        <TextBlock Text="Средний уровень &#x0a;Здесь находятся &#x0a;&#x0a;5 заданий"
                            Foreground="#FFFFFF"
                            FontFamily="Ubunta"
                            FontSize="15"
@@ -140,14 +140,14 @@
                     <Grid>
                         <Border Background="#FFFFFF"
                         Height="150"
-                        Width="140"
-                        HorizontalAlignment="Left"
+                        Width="160"
+                        HorizontalAlignment="Center"
                         VerticalAlignment="Top"
                         CornerRadius="20"
                         Opacity="0.3"
-                        Margin="10,10,0,0"/>
+                        Margin="0,10,0,0"/>
 
-                        <TextBlock Text="Тяжёлый &#x0a;X задач &#x0a;X тестов &#x0a;X головоломок"
+                        <TextBlock Text="Тяжёлый &#x0a;Здесь находятся &#x0a;&#x0a;5 заданий "
                            Foreground="#FFFFFF"
                            FontFamily="Ubunta"
                            FontSize="15"

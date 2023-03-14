@@ -7,8 +7,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text.Json;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -79,9 +77,5 @@ namespace Trainer.Pages
             }
         }
 
-        private void rememberTrue(object sender, RoutedEventArgs e)
-        {
-           
-        }
     }
 }

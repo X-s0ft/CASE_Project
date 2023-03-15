@@ -30,7 +30,7 @@
         </StackPanel>
         <StackPanel Width="580">
             <Label FontSize="45" Content="Задание №2" Foreground="Orange" HorizontalAlignment="Center" Margin="0,0,0,20"/>
-            <Label FontSize="35" Content="Какие здесь знаки действия?" Foreground="White" HorizontalAlignment="Center"/>
+            <Label FontSize="35" Content="Сколько получится?" Foreground="White" HorizontalAlignment="Center"/>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,100,0,0">
                 <Label FontSize="45" Content="27+(-30*2)-1 ="/>

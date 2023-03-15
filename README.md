@@ -9,13 +9,7 @@
 >> ![Image alt](https://github.com/RageHaker/CASE_Project/blob/main/Conсept/MainScreen.png)
 > 4) Profile (иконка, Ф.И.О, группа (% пройденных тестов(батарейка));
 >> ![Image alt](https://github.com/RageHaker/CASE_Project/blob/main/Conсept/Profile.png)
-## Тестовый вариант
-> 1) LoginPage - при запуске программы выйдет данная страница. В ней пользователь сможет как войти под своей учётной записью, так и перейти на страницу регистрации
->> ![Image alt](https://github.com/X-s0ft/CASE_Project/blob/main/Conсept/LoginPage.png)
-> 2) RegistrationPage - регистрация новых аккаунтов
->> ![Image alt](https://github.com/X-s0ft/CASE_Project/blob/main/Conсept/RegistrationPage.png)
-> 3) MainPage - главная страница с выбором сложности задачи или переход на страницу профиля
->> ![Image alt](https://github.com/X-s0ft/CASE_Project/blob/main/Conсept/MainPage.png)
+
 ## Deploy вариант
 > Страница входа
 >> ![Image alt](https://github.com/X-s0ft/CASE_Project/blob/main/Conсept/LoginPage.png)

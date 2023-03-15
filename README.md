@@ -9,13 +9,17 @@
 >> ![Image alt](https://github.com/RageHaker/CASE_Project/blob/main/Conсept/MainScreen.png)
 > 4) Profile (иконка, Ф.И.О, группа (% пройденных тестов(батарейка));
 >> ![Image alt](https://github.com/RageHaker/CASE_Project/blob/main/Conсept/Profile.png)
-## Тестовый вариант
-> 1) LoginPage - при запуске программы выйдет данная страница. В ней пользователь сможет как войти под своей учётной записью, так и перейти на страницу регистрации
+
+## Deploy вариант
+> Страница входа
 >> ![Image alt](https://github.com/X-s0ft/CASE_Project/blob/main/Conсept/LoginPage.png)
-> 2) RegistrationPage - регистрация новых аккаунтов
+> Страница регистрации
 >> ![Image alt](https://github.com/X-s0ft/CASE_Project/blob/main/Conсept/RegistrationPage.png)
-> 3) MainPage - главная страница с выбором сложности задачи или переход на страницу профиля
+> Главная страница
 >> ![Image alt](https://github.com/X-s0ft/CASE_Project/blob/main/Conсept/MainPage.png)
+> Странциа профиля
+>> ![Image alt](https://github.com/X-s0ft/CASE_Project/blob/main/Conсept/ProfilePage.png)
+
 
 ## Экскурс
 
@@ -24,16 +28,11 @@
 
 > 2_ :white_check_mark: Возможность регистрации (Страница регестрации)
 
+> 3_ :white_check_mark: Возможность проходить лёгий тест, средний тес и трудный тест
+
+> 4_ :white_check_mark: Страница профиля где можно посмотреть % пройденых тестов
+
 ### В процессе
-> 1_ :black_square_button: Новостная лента на страницы логина
-
-> 2_ :black_square_button: Запоминание логина пользователя при активном флажке
-
-> 3_ :black_square_button: Получение логина для дальнейшего выведения его в поля
 
 ### Не готово
-> 1_ :heavy_exclamation_mark: Страница пользователя
 
-> 2_ :heavy_exclamation_mark: Страница тестов
-
-> 3_ :heavy_exclamation_mark: Страница выполнения тестов

@@ -53,8 +53,7 @@ namespace Trainer.Pages
 
                     if (PasswordGet.Text != ConfirmPass.Password || string.IsNullOrEmpty(LoginGet.Text) || string.IsNullOrEmpty(ConfirmPass.Password) || string.IsNullOrEmpty(PasswordGet.Text))
                     {
-                        MessageBox.Show("Что-то не совпадает", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-
+                        MessageBox.Show("Что-то пошло не так", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
                     }
                     else
                     {
@@ -62,7 +61,10 @@ namespace Trainer.Pages
                         GetDATA users = new GetDATA()
                         {
                             login = LoginGet.Text,
-                            password = PasswordGet.Text
+                            password = PasswordGet.Text,
+                            easyTest = 0,
+                            mediumTest = 0,
+                            hardTest = 0
                         };
 
                         SetResponse set = client.Set(@"Users/" + LoginGet.Text, users);
@@ -75,11 +77,6 @@ namespace Trainer.Pages
                     MessageBox.Show(ex.Message);
                 }
             }
-        }
-
-        private void chbChecked_True(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void btnBack(object sender, RoutedEventArgs e)

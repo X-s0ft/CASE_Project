@@ -140,3 +140,5 @@ D:\GitHub\CASE_Project\Trainer\Trainer\obj\Debug\Pages\Medium\Final.baml
 D:\GitHub\CASE_Project\Trainer\Trainer\obj\Debug\Pages\Medium\n1.baml
 D:\GitHub\CASE_Project\Trainer\Trainer\obj\Debug\Pages\Medium\n2.baml
 D:\GitHub\CASE_Project\Trainer\Trainer\obj\Debug\Pages\Medium\n3.baml
+D:\GitHub\CASE_Project\Trainer\Trainer\obj\Debug\Pages\ProfilePage.g.cs
+D:\GitHub\CASE_Project\Trainer\Trainer\obj\Debug\Pages\ProfilePage.baml

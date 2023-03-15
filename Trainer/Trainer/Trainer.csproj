@@ -181,6 +181,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ProfilePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\RegistrationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -229,6 +233,9 @@
     <Compile Include="Pages\Medium\n3.xaml.cs">
       <DependentUpon>n3.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ProfilePage.xaml.cs">
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\RegistrationPage.xaml.cs">
       <DependentUpon>RegistrationPage.xaml</DependentUpon>
     </Compile>
@@ -275,9 +282,7 @@
   <ItemGroup>
     <Resource Include="Resourses\Images\ProfileICO.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resourses\GIFS\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Resourses\Images\qst5E.png" />
   </ItemGroup>

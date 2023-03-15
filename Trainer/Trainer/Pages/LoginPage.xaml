@@ -12,7 +12,7 @@
         <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,0,0,0">
             
             <Label Content="Авторизация" FontSize="40" HorizontalAlignment="Center" Foreground="White"/>
-            
+
             <StackPanel Orientation="Vertical" Margin="0,50,0,0" HorizontalAlignment="Left">
                 
                 <Label Content="Логин" FontSize="30" FontWeight="Medium"/>
@@ -56,8 +56,89 @@
                 
             </StackPanel>
         </StackPanel>
-        <StackPanel Orientation="Vertical">
-            
+        <StackPanel Margin="200,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <DockPanel Margin="40,0,0,0">
+                <Viewbox>
+                    <Canvas Width="320" Height="250">
+                        <Viewport3D Name="MyAnimatedObject"
+          ClipToBounds="True" Width="200" Height="200"
+          Canvas.Left="0" Canvas.Top="10">
+                            <Viewport3D.Camera>
+                                <PerspectiveCamera x:Name="myPerspectiveCamera" Position="0,0,2.5" LookDirection="0.1,0.2,-1" 
+             FieldOfView="60" />
+                            </Viewport3D.Camera>
+                            <Viewport3D.Children>
+
+
+                                <ModelVisual3D>
+                                    <ModelVisual3D.Content>
+                                        <DirectionalLight Color="#FFFFFF" Direction="-0.612372,-0.5,-0.612372" />
+                                    </ModelVisual3D.Content>
+                                </ModelVisual3D>
+                                <ModelVisual3D>
+                                    <ModelVisual3D.Content>
+                                        <DirectionalLight Color="#FFFFFF" Direction="0.612372,-0.5,-0.612372" />
+                                    </ModelVisual3D.Content>
+                                </ModelVisual3D>
+                                <ModelVisual3D>
+                                    <ModelVisual3D.Content>
+                                        <GeometryModel3D>
+                                            <GeometryModel3D.Geometry>
+                                                <MeshGeometry3D
+                     TriangleIndices="2 3 1  2 1 0  7 1 3  7 5 1  6 5 7  6 4 5  6 2 4  2 0 4  2 7 3  2 6 7  0 1 5  0 5 4"
+                     Normals="0,0,1 0,0,1 0,0,1 0,0,1 0,0,1 0,0,1 "
+                     TextureCoordinates="0,0 1,0 1,1 1,1 0,1 0,0 "
+                     Positions="0 0 0  1 0 0  0 1 0  1 1 0  0 0 1  1 0 1  0 1 1  1 1 1" />
+                                            </GeometryModel3D.Geometry>
+
+                                            <GeometryModel3D.Material>
+                                                <MaterialGroup>
+                                                    <DiffuseMaterial>
+                                                        <DiffuseMaterial.Brush>
+                                                            <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                                                <LinearGradientBrush.GradientStops>
+                                                                    <GradientStop Color="White" Offset="0" />
+                                                                    <GradientStop Color="Black" Offset="2"/>
+                                                                </LinearGradientBrush.GradientStops>
+                                                            </LinearGradientBrush>
+                                                        </DiffuseMaterial.Brush>
+                                                    </DiffuseMaterial>
+                                                </MaterialGroup>
+                                            </GeometryModel3D.Material>
+                                            <GeometryModel3D.Transform>
+                                                <RotateTransform3D>
+                                                    <RotateTransform3D.Rotation>
+                                                        <AxisAngleRotation3D x:Name="myAngleRotation" Axis="0,3,0" Angle="40" />
+                                                    </RotateTransform3D.Rotation>
+                                                </RotateTransform3D>
+                                            </GeometryModel3D.Transform>
+                                        </GeometryModel3D>
+                                    </ModelVisual3D.Content>
+                                </ModelVisual3D>
+                            </Viewport3D.Children>
+                            <Viewport3D.Triggers>
+                                <EventTrigger RoutedEvent="Viewport3D.Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation 
+                   Storyboard.TargetName="myAngleRotation" 
+                   Storyboard.TargetProperty="Angle" 
+                   From="-60" To="60" Duration="0:0:4" AutoReverse="True"  RepeatBehavior="Forever"/>
+
+                                            <Vector3DAnimation 
+                   Storyboard.TargetName="myAngleRotation" 
+                   Storyboard.TargetProperty="Axis" 
+                   From="0,3,0" To="1,0,1" Duration="0:0:4" AutoReverse="True"  RepeatBehavior="Forever"/>
+
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Viewport3D.Triggers>
+                        </Viewport3D>
+                    </Canvas>
+                </Viewbox>
+            </DockPanel >
+            <Label Content="S.M.A.R.T." FontSize="30" HorizontalAlignment="Center"></Label>
         </StackPanel>
     </StackPanel>
 </Page>

@@ -21,24 +21,10 @@ namespace Trainer.Pages.Hard
     /// </summary>
     public partial class n3 : Page
     {
-        DispatcherTimer _timer;
-        TimeSpan _time;
+
         public n3()
         {
             InitializeComponent();
-            InitializeComponent();
-
-            _time = TimeSpan.FromSeconds(30);
-
-            _timer = new DispatcherTimer(new TimeSpan(0, 0, 1), DispatcherPriority.Normal, delegate
-            {
-                tbTime.Text = _time.ToString("c");
-                if (_time == TimeSpan.Zero) _timer.Stop();
-                _time = _time.Add(TimeSpan.FromSeconds(-1));
-            }, Application.Current.Dispatcher);
-
-            _timer.Start();
-            timer();
         }
 
         
@@ -55,14 +41,7 @@ namespace Trainer.Pages.Hard
             {
                 App.Current.Resources["Hn5"] = 0;
             }
-
-            this.NavigationService.Navigate(new Final());
-        }
-
-        public async void timer()
-        {
-            await Task.Delay(30000);
-            App.Current.Resources["Hn5"] = 0;
+            
             this.NavigationService.Navigate(new Final());
         }
     }

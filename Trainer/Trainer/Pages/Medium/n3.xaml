@@ -9,12 +9,12 @@
       Title="n3">
 
 
-    <StackPanel Orientation="Vertical">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
         <Label Content="Задание №5" Foreground="Orange" FontSize="45" HorizontalAlignment="Center"/>
-        <Label Content="Какое слово лишнее" FontSize="30" HorizontalAlignment="Center"/>
+        <Label Content="Какое слово лишнее" FontSize="36" HorizontalAlignment="Center"/>
         <StackPanel Orientation="Horizontal" Margin="40">
             <StackPanel>
-                <Label FontSize="20" Content="мороженое, иволга, размер,&#x0a;город, лист, азбука, загар,&#x0a;трон, река, еда, сказка, книга,&#x0a;хлеб, окно, лемон, мама "/>
+                <Label FontSize="30" Content="мороженое, иволга, размер,&#x0a;город, лист, азбука, загар,&#x0a;трон, река, еда, сказка, книга,&#x0a;хлеб, окно, лемон, мама "/>
             </StackPanel>
             <StackPanel Margin="150,0,0,0">
                 <Viewbox Height="25" HorizontalAlignment="Left">

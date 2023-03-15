@@ -10,12 +10,9 @@
 
     <StackPanel Orientation="Horizontal">
 
-        <StackPanel VerticalAlignment="Center" Orientation="Vertical" Margin="50,0,0,0">
+        <StackPanel VerticalAlignment="Center" Orientation="Vertical" Margin="50,30,0,0">
             <Image Source="/Resourses/Images/ProfileICO.png"/>
-            <Label x:Name="UserName" Content="XXX" HorizontalAlignment="Center"></Label>
-        </StackPanel>
-
-        <StackPanel VerticalAlignment="Center" Orientation="Vertical" Margin="40,0,0,0">
+            <Label x:Name="UserName" Content="XXX" FontSize="20" HorizontalAlignment="Center"></Label>
             <Button Content="Об аккаунте" Cursor="Hand" Background="Transparent" Foreground="White"
                         BorderBrush="White" 
                         Width="200" Height="40" FontSize="20" Margin="0,20,0,20" Click="btnGetProfile">
@@ -25,19 +22,10 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Content="Выйти"  Cursor="Hand" Background="Transparent" Foreground="White"
-                        BorderBrush="White" 
-                        Width="200" Height="40" FontSize="20" Margin="0,20,0,20" Click="btnExit">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="15"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
         </StackPanel>
         <StackPanel Margin="70,0,0,0">
             <Label Content="Главная страница" FontSize="45" HorizontalAlignment="Center"/>
-            <Grid>
+            <Grid Margin="40">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="220" />
@@ -48,7 +36,7 @@
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="0"/>
                     <RowDefinition Height="230"/>
                     <RowDefinition Height="60"/>
                     <RowDefinition Height="*"/>

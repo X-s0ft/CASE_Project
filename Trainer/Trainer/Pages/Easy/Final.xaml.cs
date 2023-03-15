@@ -1,6 +1,11 @@
-﻿using System;
+﻿using FireSharp.Config;
+using FireSharp.Extensions;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.PeerToPeer;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,6 +18,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml.Linq;
+using Trainer.Classes;
 
 namespace Trainer.Pages.Easy
 {
@@ -21,15 +27,29 @@ namespace Trainer.Pages.Easy
     /// </summary>
     public partial class Final : Page
     {
+        IFirebaseConfig fbc = new FirebaseConfig()
+        {
+            AuthSecret = "EM0CVtJwRDTSeBOANYOrBCtxJHZHj6pbEPIUez7m",
+            BasePath = "https://base-7f796-default-rtdb.firebaseio.com/"
+        };
+
+        IFirebaseClient client;
+
         public Final()
         {
             InitializeComponent();
+
+            client = new FireSharp.FirebaseClient(fbc);
 
             Quest1.Content = App.Current.Resources["En1"];
             Quest2.Content = App.Current.Resources["En2"];
             Quest3.Content = App.Current.Resources["En3"];
             Quest4.Content = App.Current.Resources["En4"];
             Quest5.Content = App.Current.Resources["En5"];
+
+            double questions = Convert.ToDouble(Quest1.Content) + Convert.ToDouble(Quest2.Content) + Convert.ToDouble(Quest3.Content) + Convert.ToDouble(Quest4.Content) + Convert.ToDouble(Quest5.Content);
+
+            client.SetAsync(@"Users/" + LoginPage.login.ToString() + "/easyTest", questions);
 
             if (Quest1.Content.ToString() == "1" && Quest2.Content.ToString() == "1" && Quest3.Content.ToString() == "1" && Quest4.Content.ToString() == "1" && Quest5.Content.ToString() == "1")
             {
@@ -67,7 +87,8 @@ namespace Trainer.Pages.Easy
         }
 
         private void btnEnd_Click(object sender, RoutedEventArgs e)
-        {
+        {  
+
             this.NavigationService.Navigate(new ChosePage());
         }
     }

@@ -32,7 +32,7 @@ namespace Trainer.Pages
 
         private void btnGetProfile(object sender, RoutedEventArgs e)
         {
-            //this.NavigationService.Navigate(new ProfilePage());
+            this.NavigationService.Navigate(new ProfilePage());
         }
 
         private void btnEASY_Click(object sender, RoutedEventArgs e)
@@ -50,9 +50,5 @@ namespace Trainer.Pages
             this.NavigationService.Navigate(new Medium.n1());
         }
 
-        private void btnExit(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new LoginPage());
-        }
     }
 }

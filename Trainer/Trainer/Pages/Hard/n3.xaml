@@ -26,8 +26,7 @@
                         <RadioButton x:Name="Final" GroupName="AnswerRB" Content=" 4" FontSize="20"/>
                     </Viewbox>
                 </StackPanel>
-                <TextBlock Name="tbTime"  Foreground="White" HorizontalAlignment="Center" FontSize="25"/>
-                <Button Content="Закончить" Cursor="Hand" Background="Transparent" Foreground="Red"
+                <Button x:Name="endBtn" Content="Закончить" Cursor="Hand" Background="Transparent" Foreground="Red"
                         BorderBrush="Red" 
                         Width="200" Height="40" FontSize="20" Margin="0,30,0,0" Click="btnEnd_Click">
                     <Button.Resources>

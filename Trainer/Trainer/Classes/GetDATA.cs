@@ -11,6 +11,10 @@ namespace Trainer.Classes
         public string login { get; set; }
         public string password { get; set; }
 
+        public double easyTest { get; set; }
+        public double mediumTest { get; set; }
+        public double hardTest { get; set; }
+
         public static bool IsEqual(GetDATA user1, GetDATA user2)
         {
             if (user1 == null || user2 == null) { return false; }

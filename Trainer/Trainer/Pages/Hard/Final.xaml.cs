@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FireSharp.Config;
+using FireSharp.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Trainer.Classes;
 
 namespace Trainer.Pages.Hard
 {
@@ -20,15 +23,29 @@ namespace Trainer.Pages.Hard
     /// </summary>
     public partial class Final : Page
     {
+        IFirebaseConfig fbc = new FirebaseConfig()
+        {
+            AuthSecret = "EM0CVtJwRDTSeBOANYOrBCtxJHZHj6pbEPIUez7m",
+            BasePath = "https://base-7f796-default-rtdb.firebaseio.com/"
+        };
+
+        IFirebaseClient client;
+
         public Final()
         {
             InitializeComponent();
+
+            client = new FireSharp.FirebaseClient(fbc);
 
             Quest1.Content = App.Current.Resources["Hn1"];
             Quest2.Content = App.Current.Resources["Hn2"];
             Quest3.Content = App.Current.Resources["Hn3"];
             Quest4.Content = App.Current.Resources["Hn4"];
             Quest5.Content = App.Current.Resources["Hn5"];
+
+            double questions = Convert.ToDouble(Quest1.Content) + Convert.ToDouble(Quest2.Content) + Convert.ToDouble(Quest3.Content) + Convert.ToDouble(Quest4.Content) + Convert.ToDouble(Quest5.Content);
+
+            client.SetAsync(@"Users/" + LoginPage.login.ToString() + "/hardTest", questions);
 
             if (Quest1.Content.ToString() == "1" && Quest2.Content.ToString() == "1" && Quest3.Content.ToString() == "1" && Quest4.Content.ToString() == "1" && Quest5.Content.ToString() == "1")
             {
